@@ -6,27 +6,39 @@ var typed = new Typed(".text", {
   loop: true,
 });
 
-// const navbar = document.querySelectorAll(".header .navbar a");
-// const sec = document.querySelectorAll("section");
-// // function activeMenu() {
-// //   let len = sec.length;
-// //   while (--len && window.scroll + 97 < sec[len].offsetTop) {}
-// //   navbar.forEach((ltx) => ltx.classList.remove("active"));
-// //   navbar.classList.add("active");
-// // }
-// // activeMenu();
-// // window.addEventListener("scroll", activeMenu());
-// let currentSection = "";
-// window.addEventListener("scroll", () => {
-//   sec.forEach((sc) => {
-//     if (window.scrollY >= sc.offsetTop - sc.clientHeight / 2) {
-//       currentSection = sc.id;
-//     }
-//   });
-//   navbar.forEach((nav) => {
-//     if (nav.href.includes(currentSection)) {
-//       document.querySelector(".active").classList.remove(".active");
-//       nav.classList.add("active");
-//     }
-//   });
-// });
+// Mobile menu toggle
+const menuBtn = document.querySelector(".menu-btn");
+const navbar = document.querySelector(".navbar");
+if (menuBtn && navbar) {
+  menuBtn.addEventListener("click", () => {
+    navbar.classList.toggle("open");
+  });
+  // close menu when a link is clicked
+  navbar.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => navbar.classList.remove("open"))
+  );
+}
+
+// Active section highlight on scroll
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".navbar a");
+
+function setActiveLink() {
+  let top = window.scrollY + 120;
+  let currentId = "";
+  sections.forEach((sec) => {
+    const offsetTop = sec.offsetTop;
+    const height = sec.offsetHeight;
+    if (top >= offsetTop && top < offsetTop + height) {
+      currentId = sec.getAttribute("id");
+    }
+  });
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    const href = link.getAttribute("href") || "";
+    if (href === "#" + currentId) link.classList.add("active");
+  });
+}
+
+window.addEventListener("scroll", setActiveLink);
+window.addEventListener("load", setActiveLink);
