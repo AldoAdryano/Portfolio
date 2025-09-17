@@ -42,3 +42,40 @@ function setActiveLink() {
 
 window.addEventListener("scroll", setActiveLink);
 window.addEventListener("load", setActiveLink);
+
+// Language switch for single About card
+(function () {
+  const btnId = document.getElementById("btn-id");
+  const btnEn = document.getElementById("btn-en");
+  const contentId = document.getElementById("content-id");
+  const contentEn = document.getElementById("content-en");
+
+  if (!btnId || !btnEn || !contentId || !contentEn) return;
+
+  function showLang(lang) {
+    if (lang === "id") {
+      contentId.hidden = false;
+      contentEn.hidden = true;
+      btnId.classList.add("active");
+      btnEn.classList.remove("active");
+      btnId.setAttribute("aria-pressed", "true");
+      btnEn.setAttribute("aria-pressed", "false");
+      localStorage.setItem("about-lang", "id");
+    } else {
+      contentId.hidden = true;
+      contentEn.hidden = false;
+      btnId.classList.remove("active");
+      btnEn.classList.add("active");
+      btnId.setAttribute("aria-pressed", "false");
+      btnEn.setAttribute("aria-pressed", "true");
+      localStorage.setItem("about-lang", "en");
+    }
+  }
+
+  btnId.addEventListener("click", () => showLang("id"));
+  btnEn.addEventListener("click", () => showLang("en"));
+
+  // load preference
+  const pref = localStorage.getItem("about-lang") || "id";
+  showLang(pref);
+})();
