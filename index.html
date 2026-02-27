@@ -5,321 +5,393 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Aldo Adryano - Frontend Developer focused on responsive and interactive web interfaces. Building fast, clean web applications with JavaScript and modern UI technologies.">
+    <title>Aldo Adryano | Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 
 <body>
+
+    <!-- ===== HEADER ===== -->
     <header class="header">
         <a href="#" class="logo">Aldo Adryano</a>
         <div class="menu-btn" aria-label="menu" title="menu">
             <i class='bx bx-menu'></i>
         </div>
         <nav class="navbar">
-            <a href="#home" class="nav">Home</a>
-            <a href="#about" class="nav">About</a>
-            <a href="#skills" class="nav">Skill</a>
-            <a href="#portfolio" class="nav">Project</a>
-            <a href="#contact" class="nav">Contact</a>
+            <a href="#home" class="nav" style="--i:1">Home</a>
+            <a href="#about" class="nav" style="--i:2">About</a>
+            <a href="#skills" class="nav" style="--i:3">Skills</a>
+            <a href="#portfolio" class="nav" style="--i:4">Portfolio</a>
+            <a href="#contact" class="nav" style="--i:5">Contact</a>
         </nav>
     </header>
+
+    <!-- ===== HERO SECTION ===== -->
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Aldo Adryano</h1>
-            <div class="gitar">
-                <img src="IMG-20250804-WA0146.jpg" alt="Aldo Adryano">
-            </div>
             <h3>And I'm a <span class="text"></span></h3>
-            <p>I'm a coder who wants to be a software engineer.
-                <br>expertise is still very little.
-            </p>
+            <p>I build fast, responsive, and interactive web applications using modern JavaScript and UI technologies.</p>
+            <p class="availability"><span class="dot"></span> Available for internship &amp; freelance opportunities</p>
             <div class="home-sci">
-                <a href="https://www.facebook.com/aldo.adryano?mibextid=ZbWKwL" style="--i:7"><i
-                        class='bx bxl-facebook'></i></a>
-                <a href="https://instagram.com/aldoadryano" style="--i:8"><i class='bx bxl-instagram'></i></a>
-                <a href="https://wa.me/qr/WJ7A2WMI5GO4L1" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
-                <a href="https://www.tiktok.com/@bokuwa_ningen" style="--i:10"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://www.facebook.com/aldo.adryano?mibextid=ZbWKwL" style="--i:7" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://instagram.com/aldoadryano" style="--i:8" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://wa.me/qr/WJ7A2WMI5GO4L1" style="--i:9" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://github.com/AldoAdryano" style="--i:10" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
             </div>
-            <a href="#about" class="btn-box">More About Me</a>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn-box">View Projects</a>
+                <a href="#contact" class="btn-box outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="home-image">
+            <div class="gitar">
+                <img src="me.png" alt="Aldo Adryano">
+            </div>
         </div>
     </section>
-    <section class="about" id="about">
-        <h2 class="about-title">About Me</h2>
 
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="about">
+        <h2 class="about-title">About <span>Me</span></h2>
         <div class="about-card single">
             <div class="lang-switch" role="tablist" aria-label="Language switch">
                 <button id="btn-id" class="btn-box small active" aria-pressed="true">Indonesia</button>
                 <button id="btn-en" class="btn-box small" aria-pressed="false">English</button>
             </div>
-
             <div class="about-content">
                 <div id="content-id" class="about-lang">
-                    <h3>Indonesia</h3>
                     <p>
-                        Sejak duduk di bangku sekolah, saya selalu tertarik pada bagaimana teknologi bisa memecahkan
-                        masalah nyata. Minat itu membawa saya menekuni <strong>robotika</strong> dan <strong>pengembangan
-                        web</strong>, dua bidang yang sama-sama menantang kreativitas dan logika.
+                        Saya adalah <strong>frontend developer</strong> yang fokus pada pembuatan tampilan web yang responsif, rapi, dan mudah digunakan. Saya belajar melalui pembangunan project nyata untuk melatih struktur kode, logika program, dan pengalaman pengguna.
                     </p>
                     <p>
-                        Saya menguasai <strong>HTML, CSS, JavaScript, Bootstrap, Tailwind, dan React JS</strong> untuk
-                        membangun tampilan web yang interaktif dan ramah pengguna. Di dunia robotika, saya berpengalaman
-                        menggunakan <strong>My Robot Time Scratch</strong>, <strong>mikrokontroler Arduino</strong>, dan
-                        <strong>Arduino IDE</strong> untuk membuat prototipe yang fungsional.
+                        Saya menguasai <strong>HTML, CSS, JavaScript, Bootstrap, Tailwind, dan React JS</strong> untuk membangun antarmuka web yang interaktif. Saya juga menggunakan <strong>Git &amp; GitHub</strong> untuk version control dan deployment via <strong>Vercel</strong>.
                     </p>
                     <p>
-                        Saat ini, saya fokus mengembangkan kembali keterampilan yang pernah saya pelajari, sambil
-                        membuka peluang <strong>freelance</strong> untuk terus belajar, berinovasi, dan menghasilkan
-                        karya yang bermanfaat.
+                        Saat ini saya memperdalam <strong>React</strong> dan berencana mempelajari <strong>Next.js</strong> serta optimasi performa web. Target saya adalah berkembang menjadi frontend engineer profesional dan berkontribusi pada produk digital yang digunakan banyak orang.
+                    </p>
+                    <p>
+                        Saya terbuka untuk kesempatan <strong>internship</strong> dan <strong>freelance</strong> untuk terus belajar, berinovasi, dan menghasilkan karya yang bermanfaat.
                     </p>
                 </div>
-
                 <div id="content-en" class="about-lang" hidden>
-                    <h3>English</h3>
                     <p>
-                        Since high school, I’ve been fascinated by how technology can solve real-world problems. That
-                        passion led me to explore both <strong>robotics</strong> and <strong>web development</strong>.
+                        I'm a <strong>frontend developer</strong> focused on building responsive, clean, and user-friendly web interfaces. I learn through real project development to sharpen my code structure, logic, and user experience skills.
                     </p>
                     <p>
-                        I have experience in <strong>HTML, CSS, JavaScript, Bootstrap, Tailwind, and React JS</strong>,
-                        building interactive and user-friendly web interfaces. In robotics, I’ve worked with
-                        <strong>Arduino</strong> and related tools to create functional prototypes.
+                        I have experience with <strong>HTML, CSS, JavaScript, Bootstrap, Tailwind, and React JS</strong>, building interactive web interfaces. I also use <strong>Git &amp; GitHub</strong> for version control and deploy projects via <strong>Vercel</strong>.
                     </p>
                     <p>
-                        Currently, I’m refining my skills and open to <strong>freelance</strong> opportunities to keep
-                        learning and building useful projects.
+                        Currently deepening my <strong>React</strong> knowledge and planning to learn <strong>Next.js</strong> and web performance optimization. My goal is to grow into a professional frontend engineer and contribute to digital products used by many people.
+                    </p>
+                    <p>
+                        I'm open to <strong>internship</strong> and <strong>freelance</strong> opportunities to keep learning, innovating, and building useful projects.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="services" id="services">
-            <div class="container">
-                <h1 class="sub-title">My <span>Games</span></h1>
-                <div class="services-list">
-                    <div>
-                        <img src="opbr.jpg" alt="opbr">
-                        <h2>One Piece Bounty Rush</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo officia excepturi iusto
-                            quaerat vitae corporis ut neque natus quae, molestias deserunt sint tempore eveniet quod,
-                            repellendus dolore culpa dolor?</p>
-                        <a href="#" class="read">Download</a>
-                    </div>
-                    <div>
-                        <img src="gi.jpg" alt="gi">
-                        <h2>Genshin Impact</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo officia excepturi iusto
-                            quaerat vitae corporis ut neque natus quae, molestias deserunt sint tempore eveniet quod,
-                            repellendus dolore culpa dolor?</p>
-                        <a href="#" class="read">Download</a>
-                    </div>
-                    <div>
-                        <img src="ml.jpg" alt="ml">
-                        <h2>Mobile Legends: Bang Bang</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo officia excepturi iusto
-                            quaerat vitae corporis ut neque natus quae, molestias deserunt sint tempore eveniet quod,
-                            repellendus dolore culpa dolor?</p>
-                        <a href="#" class="read">Download</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
     <section class="skill" id="skills">
-        <h1 class="sub-title">My <span>Skills</span></h1>
-        <div class="container1">
-            <h1 class="heading1"> <i class='bx bx-code-alt' style='color:rgba(57, 255, 20, 1)'></i>
-                Tech Stack</h1>
-            <div class="tech-stack">
-                <div class="tech"><i class='bx bxl-html5' style='color:#c95d2e'></i>
-                    <div class="info">
-                        <p class="name"><strong>HTML</strong></p>
-                        <p class="about">Advance</p>
+        <h2 class="sub-title">My <span>Skills</span></h2>
+        <div class="skills-wrapper">
+
+            <!-- Core Skills -->
+            <div class="skill-group">
+                <h3 class="skill-group-title">
+                    <i class='bx bx-code-alt'></i> Core Skills
+                </h3>
+                <div class="tech-stack">
+                    <div class="tech">
+                        <i class='bx bxl-html5' style='color:#c95d2e'></i>
+                        <div class="info">
+                            <p class="name"><strong>HTML5</strong></p>
+                            <p class="about">Advanced</p>
+                        </div>
                     </div>
-                </div>
-                <div class="tech"><i class='bx bxl-css3' style='color:#147bbc'></i>
-                    <div class="info">
-                        <p class="name"><strong>CSS</strong></p>
-                        <p class="about">Advance</p>
+                    <div class="tech">
+                        <i class='bx bxl-css3' style='color:#147bbc'></i>
+                        <div class="info">
+                            <p class="name"><strong>CSS3</strong></p>
+                            <p class="about">Advanced</p>
+                        </div>
                     </div>
-                </div>
-                <div class="tech"><i class='bx bxl-javascript' style='color:#ecff19'></i>
-                    <div class="info">
-                        <p class="name"><strong>JavaScript</strong></p>
-                        <p class="about">Advance</p>
+                    <div class="tech">
+                        <i class='bx bxl-javascript' style='color:#ecff19'></i>
+                        <div class="info">
+                            <p class="name"><strong>JavaScript</strong></p>
+                            <p class="about">Advanced</p>
+                        </div>
                     </div>
-                </div>
-                <div class="tech"><i class='bx bxl-bootstrap' style='color:#882a88'></i>
-                    <div class="info">
-                        <p class="name"><strong>Bootstrap</strong></p>
-                        <p class="about">Intermediate</p>
+                    <div class="tech">
+                        <i class='bx bx-devices' style='color:var(--warna-utama)'></i>
+                        <div class="info">
+                            <p class="name"><strong>Responsive</strong></p>
+                            <p class="about">Advanced</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <h1 class="heading2"><i class='bx bx-pencil' style='color:rgba(57, 255, 20, 1)'></i>Tools</h1>
-            <div class="tech-stack">
-                <div class="tech"><i class='bx bxl-visual-studio' style='color:#147bbc'></i>
-                    <div class="info">
-                        <p class="name"><strong>Visual Studio<br>Code</strong></p>
-                        <p class="about">Basic</p>
-                    </div>
-                </div>
-                <div class="tech"><i class='bx bxl-github' style='color:#000000'></i>
-                    <div class="info">
-                        <p class="name"><strong>Github</strong></p>
-                        <p class="about">Basic</p>
-                    </div>
-                </div>
-                <div class="tech"><i class='bx bxl-git' style='color:#c55525'></i>
-                    <div class="info">
-                        <p class="name"><strong>Git</strong></p>
-                        <p class="about">Basic</p>
+                    <div class="tech">
+                        <i class='bx bxl-git' style='color:#c55525'></i>
+                        <div class="info">
+                            <p class="name"><strong>Git</strong></p>
+                            <p class="about">Basic</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Tools & Frameworks -->
+            <div class="skill-group">
+                <h3 class="skill-group-title">
+                    <i class='bx bx-wrench'></i> Tools &amp; Frameworks
+                </h3>
+                <div class="tech-stack">
+                    <div class="tech">
+                        <i class='bx bxl-react' style='color:#61dafb'></i>
+                        <div class="info">
+                            <p class="name"><strong>React JS</strong></p>
+                            <p class="about">Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="tech">
+                        <i class='bx bxl-tailwind-css' style='color:#38bdf8'></i>
+                        <div class="info">
+                            <p class="name"><strong>Tailwind CSS</strong></p>
+                            <p class="about">Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="tech">
+                        <i class='bx bxl-bootstrap' style='color:#882a88'></i>
+                        <div class="info">
+                            <p class="name"><strong>Bootstrap</strong></p>
+                            <p class="about">Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="tech">
+                        <i class='bx bxl-github' style='color:#ffffff'></i>
+                        <div class="info">
+                            <p class="name"><strong>GitHub</strong></p>
+                            <p class="about">Basic</p>
+                        </div>
+                    </div>
+                    <div class="tech">
+                        <i class='bx bxl-visual-studio' style='color:#147bbc'></i>
+                        <div class="info">
+                            <p class="name"><strong>VS Code</strong></p>
+                            <p class="about">Proficient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Currently Learning -->
+            <div class="skill-group learning-group">
+                <h3 class="skill-group-title">
+                    <i class='bx bx-book-open'></i> Currently Learning
+                </h3>
+                <div class="learning-list">
+                    <div class="learning-item">
+                        <i class='bx bx-chevron-right'></i>
+                        <div>
+                            <strong>Next.js</strong>
+                            <p>App Router &amp; Server Components</p>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <i class='bx bx-chevron-right'></i>
+                        <div>
+                            <strong>Web Performance</strong>
+                            <p>Optimization techniques &amp; Core Web Vitals</p>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <i class='bx bx-chevron-right'></i>
+                        <div>
+                            <strong>Accessibility</strong>
+                            <p>WCAG guidelines &amp; semantic HTML</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="container2">
-            <h2>Tech Stack & Tools</h2>
-            <p>There are some tech stack and tools that i've learned and experienced</p>
+    </section>
+
+    <!-- ===== WHY WORK WITH ME SECTION ===== -->
+    <section class="why-me" id="why-me">
+        <h2 class="sub-title">Why Work <span>With Me</span></h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <i class='bx bx-rocket'></i>
+                <h3>Performance Focused</h3>
+                <p>I care about fast-loading, optimized web experiences that users love.</p>
+            </div>
+            <div class="why-card">
+                <i class='bx bx-code-block'></i>
+                <h3>Clean Code</h3>
+                <p>I write readable, maintainable code following best practices.</p>
+            </div>
+            <div class="why-card">
+                <i class='bx bx-devices'></i>
+                <h3>Responsive Design</h3>
+                <p>Every project works perfectly on all screen sizes and devices.</p>
+            </div>
+            <div class="why-card">
+                <i class='bx bx-trending-up'></i>
+                <h3>Fast Learner</h3>
+                <p>I actively learn new technologies and apply them to real projects.</p>
+            </div>
+            <div class="why-card">
+                <i class='bx bx-bulb'></i>
+                <h3>Problem Solver</h3>
+                <p>I approach every challenge with logical thinking and creativity.</p>
+            </div>
         </div>
-        <!-- <div class="container1" id="skills">
-            <h1 class="heading1">Technical Skills</h1>
-            <div class="Technical-bars">
-                <div class="bar"><i class='bx bxl-html5' style='color:#c95d2e'></i>
-                    <div class="info">
+    </section>
+
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section id="portfolio" class="project">
+        <div class="main-text">
+            <h2>My <span>Portfolio</span></h2>
+            <p>Real projects built to solve problems and sharpen my frontend skills.</p>
+        </div>
+        <div class="portfolio-content">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="img/p1.jpg" alt="Portfolio Website v1">
+                    <span class="project-label">Frontend Project</span>
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website v1</h3>
+                    <p class="project-short">A personal portfolio website to showcase my skills and projects online.</p>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Problem</span>
+                            <p>Needed a professional online presence to showcase development skills to potential employers.</p>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Solution</span>
+                            <p>Built a fully responsive portfolio website with smooth CSS animations from scratch.</p>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Challenge</span>
+                            <p>Implementing smooth animations while maintaining cross-browser compatibility and performance.</p>
+                        </div>
+                    </div>
+                    <div class="tech-tags">
                         <span>HTML</span>
-                    </div>
-                    <div class="progress-line html">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i class='bx bxl-css3' style='color:#147bbc'></i>
-                    <div class="info">
                         <span>CSS</span>
+                        <span>JavaScript</span>
                     </div>
-                    <div class="progress-line css">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i class='bx bxl-javascript' style='color:#b0bc1e'></i>
-                    <div class="info">
-                        <span>Javascript</span>
-                    </div>
-                    <div class="progress-line js">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i class='bx bxl-python' style='color:#69bcbc'></i>
-                    <div class="info">
-                        <span>Python</span>
-                    </div>
-                    <div class="progress-line python">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i class='bx bxl-java' style='color:#c95d2e'></i>
-                    <div class="info">
-                        <span>Java</span>
-                    </div>
-                    <div class="progress-line java">
-                        <span></span>
+                    <div class="project-links">
+                        <a href="https://portfolio-awal-six.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-box small">Live Demo</a>
+                        <a href="https://github.com/AldoAdryano" target="_blank" rel="noopener noreferrer" class="btn-box small outline">View Code</a>
                     </div>
                 </div>
             </div>
-        </div> -->
-        <!-- <div class="container2">
-            <h1 class="heading1">Professional Skills</h1>
-            <div class="radial-bars">
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">40%</div>
-                    <div class="text">Creativity</div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="img/p3.jpg" alt="Portfolio Website v2">
+                    <span class="project-label">Frontend Project</span>
                 </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">10%</div>
-                    <div class="text">Comunication</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">40%</div>
-                    <div class="text">Problem Solving</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">30%</div>
-                    <div class="text">TeamWork</div>
-                </div>
-            </div>
-        </div> -->
-    </section>
-    <section>
-        <div id="portfolio" class="project">
-            <div class="main-text" id="project">
-                <h2>Pro<span>ject</span></h2>
-                <p>Karena masih pemula, harap di maklumi project-nya cuman kek gini</p>
-                <div class="portfolio-content">
-                    <div class="row">
-                        <img src="img/p1.jpg">
-                        <div class="layer">
-                            <h5>Percobaan</h5>
-                            <p>Cuman latihan pas ngikutin playlistnya pak dhika</p>
-                            <a href="https://portfolio-awal-six.vercel.app/"><i class='bx bx-link-external' style="color: black;"></i></a>
+                <div class="project-info">
+                    <h3>Portfolio Website v2</h3>
+                    <p class="project-short">An improved portfolio with modern design, animations, and bilingual support.</p>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Problem</span>
+                            <p>Previous portfolio lacked modern design, interactivity, and bilingual content support.</p>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Solution</span>
+                            <p>Rebuilt with enhanced UI, animated hero section, and a language toggle for Indonesian/English.</p>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Challenge</span>
+                            <p>Implementing scroll-based active navigation and full mobile responsiveness without any CSS framework.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <img src="img/p3.jpg" alt="Portfolio preview">
-                        <div class="layer">
-                            <h5>Portfolio</h5>
-                            <p>Cuman latihan pas ngikutin playlistnya pak dhika</p>
-                            <a href="https://portfolio-awal-six.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                <i class='bx bx-link-external' style="color: black;"></i>
-                            </a>
-                        </div>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Typed.js</span>
                     </div>
-                    <div class="row">
-                        <img src="img/p2.jpg">
-                        <div class="layer">
-                            <h5>Gallery</h5>
-                            <p>Cuman latihan pas ngikutin playlistnya pak dhika</p>
-                            <a href="https://gallery-nine-mu.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                <i class='bx bx-link-external' style="color: black;"></i>
-                            </a>
-                        </div>
+                    <div class="project-links">
+                        <a href="https://portfolio-awal-six.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-box small">Live Demo</a>
+                        <a href="https://github.com/AldoAdryano/Portfolio" target="_blank" rel="noopener noreferrer" class="btn-box small outline">View Code</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-img-wrap">
+                    <img src="img/p2.jpg" alt="Photo Gallery">
+                    <span class="project-label">Frontend Project</span>
+                </div>
+                <div class="project-info">
+                    <h3>Photo Gallery</h3>
+                    <p class="project-short">An interactive photo gallery with smooth hover overlay effects.</p>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Problem</span>
+                            <p>Needed a clean, interactive way to display and organize images in a grid layout.</p>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Solution</span>
+                            <p>Built a responsive gallery using CSS Grid with animated hover overlay for each image.</p>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Challenge</span>
+                            <p>Creating smooth hover transitions and maintaining consistent image sizing across different screen sizes.</p>
+                        </div>
+                    </div>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>CSS Grid</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://gallery-nine-mu.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-box small">Live Demo</a>
+                        <a href="https://github.com/AldoAdryano" target="_blank" rel="noopener noreferrer" class="btn-box small outline">View Code</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
     <section class="contact" id="contact">
         <div class="contact-text">
             <h2>Contact <span>Me</span></h2>
-            <h4>Let's work Together</h4>
-            <p>Saya terbuka untuk peluang kerja sama, proyek freelance, atau diskusi seputar teknologi, robotika, dan pengembangan web. Jangan ragu untuk menghubungi saya melalui email atau WhatsApp.</p>
+            <h4>Let's build something together.</h4>
+            <p>I'm open for internship, freelance, and collaboration opportunities. Feel free to reach out — I'd love to connect and discuss how I can contribute to your project.</p>
             <div class="contact-list">
-                <li><i class='bx bxs-send'></i>a0398895@gmail.com</li>
-                <li><i class='bx bxs-phone'></i>088983776936</li>
+                <li><i class='bx bxs-send'></i> a0398895@gmail.com</li>
+                <li><i class='bx bxs-phone'></i> 088983776936</li>
+                <li>
+                    <i class='bx bxl-github'></i>
+                    <a href="https://github.com/AldoAdryano" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">
+                        github.com/AldoAdryano
+                    </a>
+                </li>
             </div>
             <div class="contact-icon">
-                <a href="https://www.facebook.com/aldo.adryano?mibextid=ZbWKwL" style="--i:7"><i class='bx bxl-facebook'></i></a>
-                <a href="https://instagram.com/aldoadryano" style="--i:8"><i class='bx bxl-instagram'></i></a>
-                <a href="https://wa.me/qr/WJ7A2WMI5GO4L1" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
-                <a href="https://www.tiktok.com/@bokuwa_ningen" style="--i:10"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://www.facebook.com/aldo.adryano?mibextid=ZbWKwL" style="--i:7" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="https://instagram.com/aldoadryano" style="--i:8" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://wa.me/qr/WJ7A2WMI5GO4L1" style="--i:9" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://github.com/AldoAdryano" style="--i:10" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
             </div>
         </div>
         <div class="contact-form">
@@ -328,21 +400,21 @@
                 <input type="email" placeholder="Enter Your Email" required>
                 <input type="text" placeholder="Enter Your Subject">
                 <textarea name="message" cols="40" rows="6" placeholder="Enter Your Message"></textarea>
-                <input type="submit" value="Submit" class="send">
+                <input type="submit" value="Send Message" class="send">
             </form>
         </div>
     </section>
+
+    <!-- ===== FOOTER ===== -->
     <div class="last-text">
-        <p>Developed with love by Aldo Adryano © 2023</p>
+        <p>© 2026 Aldo Adryano &mdash; Built with passion for web development.</p>
     </div>
+
     <a href="#" class="top" aria-label="back to top">
         <i class="bx bx-up-arrow-alt"></i>
     </a>
+
     <script src="script.js"></script>
 </body>
 
-
 </html>
-
-
-

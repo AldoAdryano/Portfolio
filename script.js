@@ -1,8 +1,8 @@
 var typed = new Typed(".text", {
-  strings: ["Web Developer", "Frontend Developer"],
-  typeSpeed: 100,
-  backSpeed: 100,
-  backDelay: 1000,
+  strings: ["Frontend Developer", "UI Builder", "Web Developer"],
+  typeSpeed: 80,
+  backSpeed: 60,
+  backDelay: 1500,
   loop: true,
 });
 
